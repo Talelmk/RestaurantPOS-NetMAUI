@@ -15,6 +15,7 @@ namespace RestaurantPOS.ViewModels
             if (_isInitialized) return;
 
             _isInitialized = true;
+            //Preferences.Default.Clear();
 
             var name = Preferences.Default.Get<string?>(NameKey, null);
 
